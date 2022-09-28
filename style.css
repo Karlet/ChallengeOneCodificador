@@ -1,0 +1,331 @@
+body{
+    display: grid;
+    grid-template-rows: auto 718px auto;
+    grid: 0.4em;
+    width: auto;
+    background: linear-gradient(#FEFEFE, #888888);
+   
+}
+
+/* Encabezado */
+
+header{
+    width: 100%;
+    height: 85px;
+    background: #FFFFFF;
+    
+}
+
+.encabezado{
+    background: #FAFAFA;
+}
+.logo_alura{
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.logo-encabezado{
+    width: 2.8em;
+    padding-top: 10px;   
+
+}
+
+.titulo_principal{
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    
+}
+.titulo_general{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5em;
+    text-decoration:inherit;
+	font-family: 'Source Serif Pro', serif;
+   
+}
+
+
+
+/* Cuerpo de la pagina */
+    main{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 10px;
+        border: 5px solid black;
+        margin: 0 auto;
+        margin-top: 8px;
+		background: #E5E7E9;
+        
+       
+    }
+
+    section{
+        width: 40%;
+        height: 100%;
+        
+    }
+
+    /* Seccion parte izquierda del main  */
+
+    .texto_cont{
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+		
+    }
+
+    .teclear_texto{
+        width: 70%;
+        height: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        resize: none;
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .advertencia{
+        display: inline-block;
+        width: 70%;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
+		font-style: italic;
+    }
+
+    #imagen_adv{
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .signo_exclamacion{
+        display: inline-block;
+    }
+
+    .botones_caja{
+        text-align: center;
+        margin-top: 75px;
+        width: auto;
+        
+    }
+
+     .btn_encriptar, .btn_desencriptar{
+         width: 30%;
+         height: 40px;
+         border-radius: 10px;
+         text-align: center;
+         background-color: #0A3871;
+         font-weight: bold;
+         font-size: 12px;
+         color: #ffffff;
+         box-shadow: 5px 6px 10px #0a3871;
+                   
+    }
+
+    .btn_encriptar{
+        margin-right: 50px;
+    }
+
+    .btn_encriptar:hover{
+        cursor: pointer;
+        background-color: #007bc2;
+        text-decoration: underline;
+		transform: scale(1.1);
+    }
+
+    
+    
+    .btn_desencriptar:hover{
+        cursor: pointer;
+        background-color: #007bc2;
+        text-decoration: underline;
+		transform: scale(1.1);
+    }
+
+    /* Seccion panel derecho */
+    
+    .caja_lado_derecho{
+        grid-column: 3/4;
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: #2196F3
+			/*rgba(0, 119, 255, 39%);*/
+    
+    }
+    .lado_derecho_division{
+        margin: o auto;
+        width: auto;
+        height: auto;
+    }
+
+    .caja_monito{
+        margin: 10px auto;
+        margin-top: 60px;
+        width: 85%;
+        height: 45%;
+        box-sizing: border-box;
+        overflow: hidden;
+        
+
+    }
+    #img_monito{
+        display: inline-block;
+        width: 85%;
+        margin: 35px;
+    }
+
+    .titulo_texto_abajo{
+        width: 98%;
+        height: 5%;
+        text-align: center;
+        display: inline-block;
+        margin: 50px auto;
+    }
+
+    .caja_cifrado{
+        width: auto;
+        font-size: 16px;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contenedor_areatexto{
+        width: auto;
+        height: 35%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 6px 2px;
+        padding-top: 6px;
+     
+    }
+    
+    .mensaje_encriptado{
+        display: inline-block;
+        width: auto;
+        height: 80%;
+        margin: 0 auto;
+        font-size: 15px;
+        
+    }
+
+
+    .btn_copiar{
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: lightgray;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #0A3871;
+        color: #ffffff;
+        box-shadow: 5px 6px 10px #0a3871;
+		margin-bottom: 100px;
+		margin:50px;
+		
+		
+    }
+    
+    .btn_copiar:hover{
+        cursor: pointer;
+        background-color: #007bc2;
+        text-decoration: underline;
+		transform: scale(1.1);
+    }
+
+    /* Contenedor del panel derecho resultado */
+
+    .lado_derecho_div_resultado{
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+     .contenedor_resultado{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+    .titulo_resultado{
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        margin: 5px auto;
+        padding: 6px 3px;
+        font-size: 25px;
+        font-weight: bold;
+		font-style: italic
+    }
+
+   
+    .area_txt_encriptado{
+        width: 80%;
+        height: 400px;
+        margin: 10px auto;
+        padding: 10px 4px;
+		font-size: 18px;
+		font-style: normal;
+        
+    }
+
+    ._btncopiar2 {
+        width: 100%;
+        height: 40px;
+        margin-top: 201px;
+        text-align: center;
+    }
+
+    /* Pie de pagina con Logo y Copyright */
+    footer{
+        width: 100%;
+        height: 120px;
+        background-color: #FAFAFA;
+        text-align: center;
+   		font-size: 3em;
+        
+    }
+
+     .copyright{
+        font-size: 16px;
+        vertical-align: top;
+        margin-top: 40px;
+        
+    }
+
+    #logo-linkedin{
+        display: inline-block;
+        margin: 0 5px;
+        transition: 0.7s;
+    }
+      
+    #logo-linkedin:hover{
+        transform: scale(1.5);
+            
+    }
+
+@media screen and (max-width: 480px) {
+        body{
+           grid-template-areas: "Header"
+                                "Main"
+                                "Footer";
+		width: auto;
+	}
+}

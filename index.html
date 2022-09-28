@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Encriptador</title>
+	<link rel="icon" type="image/png" href="Imagenes/Logo alura.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header class="encabezado">
+		 <div class="logo_alura"> <!--Título y el logo de la página-->
+			<img src="Imagenes/Logo alura.png" alt="Logo de Alura" class="logo_encabezado">
+			</div>
+			<div class="titulo_principal">
+			<h1 class="titulo_general">Encriptador de Mensajes</h1>
+	   </div>
+	</header>
+
+	<main class="cuerpo_general">
+		<section class="texto_cont"> 
+			<div class="area_texto">
+				<div class="area_escribir_texto">
+					<textarea name="" class="teclear_texto" cols="120" rows="20" placeholder="Tecle el texto que desea encriptar / desencriptar aqui" autofocus></textarea>
+				</div>
+
+				<div class="advertencia"> 
+
+					<h5 class="signo_exclamacion"> <img id="imagen_adv"src="Imagenes/Icon-!.png" alt="signo de exclamación"> Ingresar solo letras minúsculas, sin acentos o caracteres especiales</h5>
+				</div>
+			</div>
+
+
+			<div class="botones_caja">
+			   <button class="btn_encriptar" onclick="btnEncriptar()">Encriptar</button>
+			   <button class="btn_desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+			</div>
+		</section>
+
+		<aside class="caja_lado_derecho"> <!--contenedor del panel derecho donde se muestra el mensaje encriptado-->
+		   <div class="lado_derecho_division">
+				<div class="caja_monito">
+					<img id="img_monito"src="Imagenes/monito.png" alt="imagen de Persona mirando diamante con lupa">
+				</div>
+				<div class="titulo_texto_abajo"> 
+					<h3 class="caja_cifrado">Ningun mensaje fue encontrado</h3>
+				</div>    
+				<div class="contenedor_areatexto" >
+					<p class="mensaje_encriptado">Ingrese el texto que desee encriptar/desencriptar
+					</p>
+
+				</div>
+
+
+			</div>
+
+			<div class="lado_derecho_div_resultado">
+				<div class="contenedor_resultado">
+					<h3 class="titulo_resultado">Resultado</h3>
+					<textarea class="area_txt_encriptado" cols="20" rows="15" placeholder="Resultado de la encriptacion/desencriptacion" disabled></textarea>
+				</div>
+				
+				<div class="btncopiar2">
+					<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+					<button class="btn_copiar" onclick="copiarTexto()">Copiar</button>
+				</div> 
+			</div>
+		</aside>
+
+	</main>
+
+	<footer>
+		<div class="info_pie_pagina"> 
+			<p class="copyright"> &copy Challenge ONE Alura - Diseño realizado por Karla L. Núñez</p>
+			<a href="https://www.linkedin.com/in/karlanunezgracian" target="_blank"> <img id="logo-linkedin" src="Imagenes/linkedin.png" alt="Logo Linkedin" ></a>      
+		</div>
+	</footer> 
+	<script src="script.js"></script> 
+
+</body>
+</html>
